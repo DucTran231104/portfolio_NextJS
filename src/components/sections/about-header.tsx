@@ -17,9 +17,9 @@ export function AboutHeader() {
           About Me
         </Badge>
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl mb-6">
-          Muhammad{' '}
+          Tran Thai{' '}
           <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            Fiaz
+            Trong Duc
           </span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">

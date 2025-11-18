@@ -24,7 +24,7 @@ export interface SiteConfig {
   ogImage: string;
   twitterHandle: string;
   author: string;
-  author_img:string;
+  author_img: string;
 
   theme: {
     default: 'light' | 'dark';
@@ -40,31 +40,31 @@ export interface SiteConfig {
   social: SocialLink[];
   navigation: NavItem[];
   seo: {
-  title: string;
-  description: string;
-  keywords: string[];
-  canonical?: string;
-  image?: string; // default og image
-  imageAlt?: string;
-  locale?: string;
-  type?: string;
-  twitterCard?: string;
-  robots?: string;
-  themeColor?: string;
+    title: string;
+    description: string;
+    keywords: string[];
+    canonical?: string;
+    image?: string; // default og image
+    imageAlt?: string;
+    locale?: string;
+    type?: string;
+    twitterCard?: string;
+    robots?: string;
+    themeColor?: string;
   };
 
 }
 
 export const siteConfig: SiteConfig = {
-  siteName: 'Muhammad Fiaz',
-  domain: 'muhammadfiaz.com',
-  author: 'Muhammad Fiaz',
+  siteName: 'Tran Thai Trong Duc',
+  domain: 'localhost:3000',
+  author: 'Tran Thai Trong Duc',
   description: 'Full Stack developer creating useful & delightful web experiences. Exploring ML & AI.',
   about:
     'I am a Full Stack developer who loves creating new things. I spend my spare time building free apps & tools, and I am currently diving into Machine Learning & AI to expand my problem‑solving toolkit. Always open to collaboration & new challenges.',
-    author_img: 'https://avatars.githubusercontent.com/u/75434191?v=4',
-    keywords: [
-    'Muhammad Fiaz',
+  author_img: '/img/IMG_9046.jpg',
+  keywords: [
+    'Tran Thai Trong Duc',
     'Full Stack Developer',
     'Portfolio',
     'Next.js',
@@ -83,17 +83,16 @@ export const siteConfig: SiteConfig = {
     allowSystem: true,
   },
   links: {
-    website: 'https://muhammadfiaz.com',
-    github: 'https://github.com/muhammad-fiaz',
-    linkedin: 'https://www.linkedin.com/feed/',
-    tips: 'https://pay.muhammadfiaz.com',
-    email: 'mailto:contact@muhammadfiaz.com',
+    website: 'https://localhost:3000',
+    github: 'https://github.com/DucTran231104',
+    linkedin: 'https://www.linkedin.com/in/tr%E1%BA%A7n-%C4%91%E1%BB%A9c-37306136b/',
+    tips: 'https://pay.localhost:3000',
+    email: 'tranthaitrongduc@gmail.com',
   },
   social: [
-    { label: 'GitHub', url: 'https://github.com/muhammad-fiaz', icon: 'github' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/feed/', icon: 'linkedin' },
-    { label: 'Website', url: 'https://muhammadfiaz.com', icon: 'globe' },
-    { label: 'Tip', url: 'https://pay.muhammadfiaz.com', icon: 'coffee' },
+    { label: 'GitHub', url: 'https://github.com/DucTran231104', icon: 'github' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/tr%E1%BA%A7n-%C4%91%E1%BB%A9c-37306136b/', icon: 'linkedin' },
+    { label: 'Website', url: 'https://localhost:3000', icon: 'globe' },
   ],
   navigation: [
     { label: 'Home', href: '/' },
@@ -104,12 +103,12 @@ export const siteConfig: SiteConfig = {
     { label: 'Contact', href: '/contact' }
   ],
 
-  
+
   seo: {
-    title: 'Muhammad Fiaz',
+    title: 'Tran Thai Trong Duc',
     description: 'Full Stack developer creating useful & delightful web experiences. Exploring ML & AI.',
     keywords: [
-      'Muhammad Fiaz',
+      'Tran Thai Trong Duc',
       'Full Stack Developer',
       'Portfolio',
       'Next.js',
@@ -120,9 +119,9 @@ export const siteConfig: SiteConfig = {
       'Machine Learning',
       'AI'
     ],
-    canonical: 'https://muhammadfiaz.com',
+    canonical: 'https://localhost:3000',
     image: '/og.png',
-    imageAlt: "Muhammad Fiaz - Full Stack Developer",
+    imageAlt: "Tran Thai Trong Duc - Full Stack Developer",
     locale: 'en-US',
     type: 'website',
     twitterCard: 'summary_large_image',
