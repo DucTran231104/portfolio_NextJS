@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": " next build",
+    "build": "cd prisma && npx prisma generate && cd .. && next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build"
+    "postinstall": "echo 'Skipping prisma generate in postinstall - will run in vercel-build'",
+    "vercel-build": "cd prisma && npx prisma generate && npx prisma migrate deploy && cd .. && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
