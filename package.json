@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "postinstall": "echo 'Skipping prisma generate in postinstall - will run in vercel-build'",
-    "vercel-build": "cd prisma && npx prisma generate && npx prisma migrate deploy && cd .. && next build"
+    "vercel-build": "node scripts/setup-env.js && cd prisma && npx prisma generate && npx prisma migrate deploy && cd .. && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
