@@ -21,8 +21,8 @@ interface GitHubRepo {
 export async function GET() {
   try {
     const githubToken = process.env.GITHUB_TOKEN;
-    const githubUsername = process.env.GITHUB_USERNAME || 'muhammad-fiaz';
-    
+    const githubUsername = process.env.GITHUB_USERNAME || 'DucTran231104';
+
     if (!githubToken) {
       return NextResponse.json(
         { error: 'GitHub token not configured' },
@@ -66,7 +66,7 @@ export async function GET() {
     });
   } catch (error) {
     console.error('Error fetching GitHub repositories:', error);
-    
+
     return NextResponse.json(
       { error: 'Failed to fetch projects' },
       { status: 500 }
